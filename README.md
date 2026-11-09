@@ -11,9 +11,9 @@ A debian installation (hardware or virtual machine) with appropriate video drive
 
 ## ISO for Installing Debian
 [debian-12.15.0-amd64-netinst.iso](https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso)
+[Alternate Installing Debian 12](https://www.debian.org/releases/bookworm/debian-installer/)
+[Debian “bookworm” Release Information](https://www.debian.org/releases/bookworm/))
 
-Installing Debian 12
-
-Debian “bookworm” Release Information
-
-Installing Debian without a desktop environment
+## Installing Debian without a desktop environment
+As you progress through the debian installation, towards the end you will be presented with the following screen for Software selection:
+![Uploading image.png…]()
