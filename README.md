@@ -10,7 +10,7 @@ A debian installation (hardware or virtual machine) with appropriate video drive
 * Installation of bash to run install script sudo pkg install bash
 
 ## ISO for Installing Debian
-[debian-12.15.0-amd64-netinst.iso] (https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso)
+[debian-12.15.0-amd64-netinst.iso](https://cdimage.debian.org/cdimage/archive/12.15.0/amd64/iso-cd/debian-12.15.0-amd64-netinst.iso)
 
 Installing Debian 12
 
