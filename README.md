@@ -16,4 +16,9 @@ A debian installation (hardware or virtual machine) with appropriate video drive
 
 ## Installing Debian without a desktop environment
 As you progress through the debian installation, towards the end you will be presented with the following screen for Software selection:
-![Uploading image.png…]()
+<img width="1400" height="788" alt="debian12-installer" src="https://github.com/user-attachments/assets/e849e83a-91bc-4c10-89d4-af2680ab6422" />
+Uncheck Debian desktop environment to install a minimal debian system.
+
+
+
+
