@@ -42,6 +42,7 @@ sudo apt install gnome-panel-control lightdm
 ```
 
 This still may include too much 'stuff' for the minimalists among us. In that case, strip it down further and start with:
+```
 apt install \
     obconf \
     pcmanfm \
@@ -62,4 +63,4 @@ apt install \
 
 # laptop users may want to add the Gnome compatible settings
 # xfce4-battery-plugin network-manager network-manager-gnome 
-
+```
