@@ -34,11 +34,11 @@ sudo ./openbox-install.sh
 ## Manually install Openbox and required packages
 If you've read this far, and you're getting impatient:
 ```
-sudo apt install -y openbox obconf openbox-lxde-session lxterminal 
+sudo apt install -y openbox obconf openbox-lxde-session lxterminal xbacklight pcmanfm lxappearance lxpanel gmrun gnome-terminal
 ```
 This will give you a basic openbox desktop with lightdm greeter. For additional plugins and ''goodies', add:
 ```
-sudo apt install gnome-panel-control lightdm
+sudo apt install gnome-panel-control lightdm -y
 ```
 
 This still may include too much 'stuff' for the minimalists among us. In that case, strip it down further and start with:
@@ -48,11 +48,14 @@ apt install \
     pcmanfm \
     jwm \
     tint2 \
+    gmrun \
     openbox-lxde-session \
+    lxappearance \
     lxsession-logout \
     lxhotkey-plugin-openbox \
     volumeicon-alsa \
     alsa-utils \
+    lxpanel \
     nitrogen \
     lxde-terminal \
     obconf \
@@ -63,4 +66,36 @@ apt install \
 
 # laptop users may want to add the Gnome compatible settings
 # xfce4-battery-plugin network-manager network-manager-gnome 
+```
+From this point you should have a working openbox desktop environment. You can reboot, and add only what you need going forward. If you plan to start Openbox without lightdm, you may need to install xorg and xinit.
+```
+sudo apt install --no-install-recommends xorg xinit -y
+```
+
+To make the panel automatically show up, add this to ~/.config/openbox/autostart file using nano or vim editors:
+```
+lxpanel &
+picom &
+volumeicon &
+```
+**Restart**
+
+## Notes:
+lxpanel is not the only option for installing a Desktop panel, there are others too like fbpanel, tint2 and xfce4-panel. [Read this](https://www.maketecheasier.com/configure-andcustomize-openbox/) for more details.
+To add a battery indicator to the lxpanel, add this to the ~/.config/lxpanel/default/panels/panel
+```
+Plugin {
+  type = batt
+}
+```Plaintext 📋
+To save your openbox customizations between sessions (which is a basic requirement), copy the rc.xml and menu.xml from /etc/X11/openbox to ~/.config/openbox/ (create this folder if it doesn’t exist).
+gmrun is needed to show the run dialog that pops up when you press Alt+F2 in any “normal” DE. Once you install gmrun, just add below code to ~/.config/openbox/rc.xml somewhere in the <keyboard> section, in order to make the keys work:
+```
+<!--start: Prahlad-->
+<keybind key="A-F2">
+<action name="Execute">
+  <command>gmrun</command>
+</action>
+</keybind>
+<!--end: Prahlad-->
 ```
