@@ -100,3 +100,5 @@ gmrun is needed to show the run dialog that pops up when you press Alt+F2 in any
 </keybind>
 <!--end: Prahlad-->
 ```
+* lightdm or xdm is optional, but helpful if you don’t want to do a lot of configuration changes in xorg files to show up the desktop automatically each time you login. Of course, you can use lightdm too if you want.
+* I don’t use bluetooth a lot and haven’t included any of those packages, but there are many of them such as bluetooth bluez blueman in case you need one.
