@@ -83,13 +83,14 @@ volumeicon &
 ## Notes:
 lxpanel is not the only option for installing a Desktop panel, there are others too like fbpanel, tint2 and xfce4-panel. [Read this](https://www.maketecheasier.com/configure-andcustomize-openbox/) for more details.
 To add a battery indicator to the lxpanel, add this to the ~/.config/lxpanel/default/panels/panel
-```
+```Plaintext 📋
 Plugin {
   type = batt
 }
-```Plaintext 📋
+```
 To save your openbox customizations between sessions (which is a basic requirement), copy the rc.xml and menu.xml from /etc/X11/openbox to ~/.config/openbox/ (create this folder if it doesn’t exist).
 gmrun is needed to show the run dialog that pops up when you press Alt+F2 in any “normal” DE. Once you install gmrun, just add below code to ~/.config/openbox/rc.xml somewhere in the <keyboard> section, in order to make the keys work:
+
 ```
 <!--start: Prahlad-->
 <keybind key="A-F2">
